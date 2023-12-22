@@ -82,16 +82,17 @@
     padding-right: 38.5rem;
     color: $Secondary-Color;
     font: $Text-1;
+    transition: $transition;
 
     &::placeholder {
       color: $Accent-2;
       font: $Text-1;
     }
-  }
 
-  // &__email-btn, &__psw-btn {
-  //   cursor: pointer;
-  // }
+    &:hover {
+      border-color: $Accent-2;
+    }
+  }
 
   &__password-actions {
     width: 100%;
@@ -125,7 +126,7 @@
     ::before {
       content: "";
       font: $Text-2;
-      font-family: 'Material Icons';
+      font-family: "Material Icons";
       font-size: 18rem;
       display: flex;
       flex-direction: row;
@@ -136,23 +137,30 @@
       border: $border;
       position: absolute;
       left: 0rem;
+      transition: $transition-1;
     }
-  
+
     &.active-style {
       ::before {
-        content: '\e5ca';
+        content: "\e5ca";
         color: $white;
         background-color: $Primary-Color;
-        border-color:  $Primary-Color;
+        border-color: $Primary-Color;
       }
     }
-  
   }
 
   &__password-actions-forgot {
+    text-decoration: none;
+    transition: $transition;
+
     & a {
       color: $Primary-Color;
       font: $Text-2;
+    }
+
+    &:hover {
+      transform: $transform-btn;
     }
   }
 
@@ -169,6 +177,11 @@
     font-size: 16rem;
     text-wrap: nowrap;
     margin-bottom: 16rem;
+    transition: $transition;
+
+    &:hover {
+      transform: $transform-btn;
+    }
   }
 
   &__btn-with-google {
@@ -181,16 +194,20 @@
     border: $border;
     margin-bottom: 20rem;
     text-decoration: none;
-
     color: $Secondary-Color;
     font-family: Inter;
     font: $Text-2;
     font-size: 16rem;
     text-wrap: nowrap;
+    transition: $transition;
 
     & img {
       width: 24rem;
       height: 24rem;
+    }
+
+    &:hover {
+      transform: $transform-btn;
     }
   }
 
@@ -212,14 +229,13 @@
     }
   }
 
-  &__email-btn{
+  &__email-btn {
     opacity: 0;
     transition: opacity 0.3s ease;
 
     &.active {
       opacity: 1;
     }
-
   }
 }
 
@@ -246,20 +262,19 @@
 
     svg path:nth-child(5) {
       stroke: transparent;
-    }      
-
-    &.passwordshow{
-      svg path:nth-child(5) {
-        stroke: $Accent-2;
-      }      
     }
 
-    svg{
+    &.passwordshow {
+      svg path:nth-child(5) {
+        stroke: $Accent-2;
+      }
+    }
+
+    svg {
       width: 100%;
       height: auto;
       object-fit: cover;
     }
-
   }
 }
 

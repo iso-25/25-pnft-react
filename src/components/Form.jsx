@@ -50,7 +50,6 @@ const Form = () => {
                 <div className="auth-forma__password-actions">
                     <div className={`auth-forma__password-actions-remember ${isChecked ? 'active-style' : ''}`}>
                         <label>
-                            {/* onst [isChecked, setIsChecked] = useState(false); */}
                             <input type="checkbox" checked={isChecked} onChange={(e) => setIsChecked(e.target.checked)}
                                 className="checkRemember" />Remember me
                         </label>
