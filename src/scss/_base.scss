@@ -1,0 +1,33 @@
+html {
+  font-size: 1px;
+
+  @include desktop-small {
+    font-size: 0.9px;
+  }
+
+  @include tablet {
+    font-size: 0.8px;
+  }
+
+  @include tablet-small {
+    font-size: 0.7px;
+  }
+
+  @include mobile {
+    font-size: 0.7px;
+  }
+
+  @include mobile-small {
+    font-size: 0.6px;
+  }
+
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--ff);
+  background: #cbcce8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

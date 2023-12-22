@@ -1,0 +1,20 @@
+:root {
+    --ff: 'Inter', sans-serif;
+}
+
+$black: #000;
+$white: #FFF;
+
+$Accent-1: #D0D5DD;
+$Accent-2: #667085;
+$background: #FCFDFF;  
+
+$c-Headline: #344054;
+$c-Text-1: $Accent-2;
+$Text-1: normal normal 400 16rem/24rem var(--ff);
+$Text-2: normal normal 500 14rem/20rem var(--ff);
+
+$Primary-Color: #5429FF;
+$Secondary-Color: $c-Headline;
+
+$border: 1rem solid $Accent-1;
