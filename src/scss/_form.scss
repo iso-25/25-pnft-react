@@ -126,6 +126,7 @@
     ::before {
       content: "";
       font: $Text-2;
+      color: $white;
       font-family: "Material Icons";
       font-size: 18rem;
       display: flex;
@@ -143,7 +144,6 @@
     &.active-style {
       ::before {
         content: "\e5ca";
-        color: $white;
         background-color: $Primary-Color;
         border-color: $Primary-Color;
       }
@@ -157,6 +157,7 @@
     & a {
       color: $Primary-Color;
       font: $Text-2;
+      text-decoration: none;
     }
 
     &:hover {

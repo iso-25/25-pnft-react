@@ -34,8 +34,6 @@ const Form = () => {
                     <div className="input">
                         <input type={passwordShow ? 'text' : 'password'} id="inputPsw" name="inputFieldPsw" className="auth-forma__psw-input"
                             placeholder="••••••••" required value={password} onChange={(e) => setPassword(e.target.value)} />
-                        {/* <img src={passImg} alt="Hide" className={`auth-forma__psw-btn input__btn ${passwordShow ? (password ? 'active' : '') : ''}`} onClick={changePasswordShow} /> */}
-
                         <div className={`auth-forma__psw-btn input__btn ${passwordShow ? 'passwordshow' : ''}`} onClick={changePasswordShow}>
                             <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M7.7606 11.3668C7.1856 10.7928 6.8356 10.0128 6.8356 9.1378C6.8356 7.3848 8.2476 5.9718 9.9996 5.9718C10.8666 5.9718 11.6646 6.3228 12.2296 6.8968" stroke="#667085" stroke-linecap="round" stroke-linejoin="round" />
